@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply accent-black;
+  font-family: "Montserrat", serif;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer components {
+  .input {
+    @apply px-3 py-2 bg-white text-black outline-none font-semibold;
+  }
+  .input::placeholder {
+    @apply text-black font-normal;
+  }
+}
